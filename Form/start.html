@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Forms</title>
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <form method="post">
+    <label>Email:</label>
+    <input type="email" placeholder="e.g excercise@gmail.com" required>
+    <label>Password:</label>
+    <input type="password" required>
+    <label>Name:</label>
+    <input type="text" placeholder="first name" required>
+    <label>Last Name:</label>
+    <input type="text" placeholder="last name" required>
+
+    <label>Date of Birth:</label>
+    <input type="date" value="dob" required>
+
+    <label for="phone">Telephone Number:</label>
+    <input type="tel" name="phone" placeholder="phone number" required>
+
+    <label for="plan">Choose a Plan:</label>
+    <select name="plan">
+      <option value="free">free plan</option>
+      <option value="plan 1"> Plan 1 -$1000</option>
+      <option value="plan 2"> Plan 2 -$1500</option>
+      <option value="plan 3"> Plan 3 -$2000</option>
+    </select>
+    <br><br>
+
+    <label>Pro plan:</label>
+    <input type="checkbox" name="pro" value="pro">
+
+    <label for="card">Card Number:</label>
+    <input type="text" name="card" placeholder="card number" required><br>
+
+    <label for="cvc">CVC:</label>
+    <input type="text" name="cvc" required>
+
+    <label for="exp">Expiration date:</label>
+    <input type="month" name="exp" required>
+
+    <label for="address">Biiling Address</label>
+    <textarea name="address" col="5" rows="2"></textarea>
+
+  </form>
+
+</body>
+
+</html>
